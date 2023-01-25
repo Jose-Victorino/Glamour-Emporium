@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e3e3e3;
+}
+.About{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #282828;
+    margin: 100px 0;
+}
+.About h1{
+    margin-bottom: 10px;
+}
+.About .Cont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.About .Cont > div{
+    display: flex;
+}
+.About .Cont .img{
+    display: flex;
+    align-items: center;
+}
+.About .Cont img{
+    width: 300px;
+    margin-right: 20px;
+}
+.About .Cont ul{
+    margin-left: 20px;
+    list-style-type: square;
+}
+.About .txt{
+    text-align: justify;    
+}
+@media(max-width: 1200px){
+    .About .Cont{
+       width: 830px;
+    }
+}
+@media(max-width: 950px){
+    .About .Cont{
+       width: 700px;
+    }
+}
+@media(max-width: 740px){
+    .About .Cont{
+       width: 540px;
+    }
+   .About .Cont > div{
+    flex-direction: column;
+    }
+    .About .Cont img{
+        margin: 0 auto;
+    }
+}
+@media(max-width: 560px){
+    .About .Cont{
+       width: 100%;
+       padding: 10px;
+    }
+}

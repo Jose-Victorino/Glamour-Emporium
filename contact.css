@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e3e3e3;
+}
+/* contacts */
+.Contacts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Contacts .Cont{
+    background-image: linear-gradient(#bbbbbb,#c2c2c2);
+    width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Contacts .Cont iframe{
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Contacts .info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.Contacts .info > div{
+    background: #b9b9b9;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Contacts .icon{
+    background: #505050;
+    color: #ffce22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.Contacts .Num div{
+    display: flex;
+    flex-direction: column;
+}
+.Contacts h1{
+    color: #262626;
+    margin-bottom: 6px;
+}
+.Contacts .Socmed .Media{
+    display: flex;
+    gap: 15px;
+}
+.Contacts .Socmed a{
+    color: black;
+}
+.Contacts .Socmed a:hover{
+    color: #505050;
+}
+@media(max-width: 1200px){
+    .Contacts .Cont{
+        width: 830px;
+    }
+    .Contacts .Cont iframe{
+        height: 400px;
+    }
+}
+@media(max-width: 950px){
+    .Contacts .Cont{
+        width: 700px;
+    }
+}
+@media(max-width: 740px){
+    .Contacts .Cont{
+        width: 540px;
+    }
+    .Contacts .info{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 560px){
+    .Contacts .Cont{
+        width: 100%;
+    }
+}

@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e3e3e3;
+}
+body section{
+    margin-bottom: 30px;
+}
+h2{
+    color: #e2bb2e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.Button{
+    background: transparent;
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    padding: 0 15px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    border: 2px solid #ecb84a;
+    transition: 0.3s;
+}
+.Button a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ecb84a;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.Button:hover{
+    background: #ecb84a;
+}
+.Button:hover a{
+    color: #f1f1f1;
+}
+/* about */
+.about-us{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #282828;
+}
+.about-us .Cont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.about-us img{
+    object-fit: cover;
+    height: 400px;
+    border-radius: 10px;
+}
+.about-us .info{
+    display: flex;
+    gap: 20px;
+    text-align: justify;
+}
+.about-us .info div{
+    margin-top: 10px;
+}
+/* service */
+.service{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #d6d6d6;
+    color: #282828;
+}
+.service .Cont{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.service .Cont .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.service .bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service img{
+    object-fit: cover;
+    height: 400px;
+    width: 25%;
+}
+.service ul{
+    flex-direction: column;
+    background: #a1a1a197;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #282828;
+    list-style: none;
+    width: 350px;
+    height: 240px;
+    gap: 5px;
+    border-radius: 15px;
+}
+/* testimonial */
+.testimonial{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.testimonial i{
+    color: #dab222;
+}
+.testimonial .Cont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.testimonial .info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.testimonial .info div{
+    background: #cfcfcf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5f5f5f;
+}
+.testimonial .Cont span{
+    margin-top: 20px;
+}
+
+/* 830px */
+@media(max-width: 1200px){
+    /* about */
+    .about-us .Cont{
+        width: 830px;
+    }
+    /* nav bar */
+    nav .logo{
+        margin-left: 100px;
+    }
+    nav ul{
+        margin-right: 150px;
+    }
+    /* service */
+    .service .Cont{
+        width: 830px;
+    }
+    /* testimonial */
+    .testimonial .Cont{
+        width: 830px;
+    }
+}
+@media(max-width: 950px){
+    /* about */
+    .about-us .Cont{
+        width: 700px;
+    }
+    /* service */
+    .service .Cont{
+        width: 700px;
+    }
+    /* testimonial */
+    .testimonial .Cont{
+        width: 700px;
+    }
+}
+@media(max-width: 740px){
+    /* about */
+    .about-us .Cont{
+        width: 540px;
+    }
+    /* service */
+    .service .Cont{
+        width: 540px;
+    }
+    .service ul{
+        width: 250px;
+    }
+    /* testimonial */
+    .testimonial .Cont{
+        width: 540px;
+    }
+}
+@media(max-width: 560px){
+    /* about */
+    .about-us .Cont{
+        width: 100%;
+        padding: 10px;
+    }
+    .about-us img{
+        object-fit: cover;
+        height: 600px;
+    }
+    .about-us .info{
+        flex-direction: column;
+    }
+    /* service */
+    .service .Cont{
+        width: 100%;
+        padding: 10px;
+    }
+    /* testimonial */
+    .testimonial .Cont{
+        width: 100%;
+        padding: 10px;
+    }
+}

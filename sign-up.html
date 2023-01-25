@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Emporium</title>
+    <link href="Pictures/logo-no-bg.png" rel="shortcut icon" type="png">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://kit.fontawesome.com/ec6c50ff9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <input type="checkbox" id="navShow">
+        <input type="checkbox" id="subAbout">
+        <input type="checkbox" id="subForm">
+        <a class="logo" href="index.html">
+            <img src="Pictures/logo-no-bg.png" alt="logo">
+            <p>Glamour emporium</p>
+        </a>
+        <ul>
+            <label class="BClose" for="navShow">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="about subCont">
+                <p>
+                    <a href="about-us.html">About</a>
+                    <label for="subAbout">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                </p>
+                <ul class="sub">
+                    <li>
+                        <a href="about-the-owner.html">About the owner</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="testimonial.html">Testimonials</a>
+            </li>
+            <li class="form subCont">
+                <p>
+                    <a href="survey.html">Forms</a>
+                    <label for="subForm">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                </p>
+                <ul class="sub">
+                    <li>
+                        <a href="survey.html">Survey</a>
+                    </li>
+                    <li>
+                        <a href="sign-up.html">Sign Up</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <label class="BOpen" for="navShow">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    </section>
+    <!-- Sign-Up -->
+    <section class="form">
+        <div class="cont">
+            <h1>Sign Up</h1>
+            <s>*Sign up to for free to earn rewards, coupons and more.</s>
+            <form method="get" action="submitted.html">
+                <div>
+                    <label for="name">
+                        <p>Name</p>
+                    </label>
+                    <div class="col">
+                        <input type="text" name="First" placeholder="First" id="name" required>
+                        <input type="text" name="Last" placeholder="Last" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="pass">
+                        <p>Password</p>
+                    </label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+                <div>
+                    <label for="email">
+                        <p>E-mail</p>
+                    </label>
+                    <input type="email" name="Email" id="email" required>
+                </div>
+                <div>
+                    <label for="number">
+                        <p>Number</p>
+                    </label>
+                    <input type="tel" name="phone" id="number" required>
+                </div>
+                <div>
+                    <label for="bday">
+                        <p>Birthday</p>
+                    </label>
+                    <input type="date" name="Birthday" id="bday" required>
+                    </div>
+                <div class="submit">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="Cont">
+            <div class="Logo">
+                <img src="Pictures/logo-no-bg.png" alt="logo">
+                <div class="Social">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="txt">
+                <div class="AboutUs">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li>
+                            <a href="about-the-owner.html">About the owner</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="testimonial.html">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="survey.html">Survey</a>
+                        </li>
+                        <li>
+                            <a href="sign-up.html">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Service">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="services.html#expert-stylists">Expert Stylists</a></li>
+                        <li><a href="services.html#hair-treatment">Hair Treatments</a></li>
+                        <li><a href="services.html#nail-treatment">Nail Treatments</a></li>
+                        <li><a href="services.html#facial">Facials</a></li>
+                    </ul>
+                </div>
+                <div class="Contact">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <s>Makati City, Manila</s>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <s>(02) 294-2175</s>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <s>Glamour123@gmail.com</s>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

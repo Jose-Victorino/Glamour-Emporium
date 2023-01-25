@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Emporium</title>
+    <link href="Pictures/logo-no-bg.png" rel="shortcut icon" type="png">
+    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://kit.fontawesome.com/ec6c50ff9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <input type="checkbox" id="navShow">
+        <input type="checkbox" id="subAbout">
+        <input type="checkbox" id="subForm">
+        <a class="logo" href="index.html">
+            <img src="Pictures/logo-no-bg.png" alt="logo">
+            <p>Glamour emporium</p>
+        </a>
+        <ul>
+            <label class="BClose" for="navShow">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="about subCont">
+                <p>
+                    <a href="about-us.html">About</a>
+                    <label for="subAbout">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                </p>
+                <ul class="sub">
+                    <li>
+                        <a href="about-the-owner.html">About the owner</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="testimonial.html">Testimonials</a>
+            </li>
+            <li class="form subCont">
+                <p>
+                    <a href="survey.html">Forms</a>
+                    <label for="subForm">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                </p>
+                <ul class="sub">
+                    <li>
+                        <a href="survey.html">Survey</a>
+                    </li>
+                    <li>
+                        <a href="sign-up.html">Sign Up</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <label class="BOpen" for="navShow">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <!-- Header -->
+    <section class="header">
+        <img src="Pictures/header.png" alt="header">
+        <div>
+            <h2>Survey</h2>
+        </div>
+    </section>
+    <!-- Survey -->
+    <section class="form">
+        <div class="Cont">
+            <form method="get" action="submitted.html">
+                <div class="basic-info">
+                    <label for="name">
+                        <p>Name</p>
+                    </label>
+                    <div class="col">
+                        <input type="text" name="First" placeholder="First" id="name" required>
+                        <input type="text" name="Last" placeholder="Last" required>
+                    </div>
+                </div>
+                <div class="ask">
+                    <p>What part of this salon did you enjoy?</p>
+                    <div>
+                        <input type="checkbox" id="Stylist">
+                        <label for="Stylist">Expert Stylist</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hair-treatment">
+                        <label for="hair-treatment">Hair Treatment</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nail-treatment">
+                        <label for="nail-treatment">Nail Treatment</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="facials">
+                        <label for="facials">Facials</label>
+                    </div>
+                </div>
+                <div class="span">
+                    <div class="rate">
+                        <p>Rate your overall experience. (1-lowest 5-highest)</p>
+                        <select name="rating">
+                            <option></option>
+                            <option id="1">1</option>
+                            <option id="2">2</option>
+                            <option id="3">3</option>
+                            <option id="4">4</option>
+                            <option id="5">5</option>
+                        </select>
+                    </div>
+                    <div class="found">
+                        <p>How did you hear about us?</p>
+                        <select name="found">
+                            <option></option>
+                            <option id="Social Media">Social Media</option>
+                            <option id="Television">Television</option>
+                            <option id="Friends">Friends</option>
+                            <option id="Family">Family</option>
+                            <option id="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="comment">
+                    <label for="">Comments/Suggestions</label>
+                    <div>
+                        <textarea id="Comment" name="Comment" placeholder="Write something..."></textarea>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="Cont">
+            <div class="Logo">
+                <img src="Pictures/logo-no-bg.png" alt="logo">
+                <div class="Social">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="txt">
+                <div class="AboutUs">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li>
+                            <a href="about-the-owner.html">About the owner</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="testimonial.html">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="survey.html">Survey</a>
+                        </li>
+                        <li>
+                            <a href="sign-up.html">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Service">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="services.html#expert-stylists">Expert Stylists</a></li>
+                        <li><a href="services.html#hair-treatment">Hair Treatments</a></li>
+                        <li><a href="services.html#nail-treatment">Nail Treatments</a></li>
+                        <li><a href="services.html#facial">Facials</a></li>
+                    </ul>
+                </div>
+                <div class="Contact">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <s>Makati City, Manila</s>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <s>(02) 294-2175</s>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <s>Glamour123@gmail.com</s>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
